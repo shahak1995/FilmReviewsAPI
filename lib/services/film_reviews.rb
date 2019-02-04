@@ -151,6 +151,4 @@ class FilmReviews
   end
 end 
 
-# test = FilmReviews.new
-# test.retrieve_film_reviews('avengers')
-# p test.retrieve_mpaa_rating
+
