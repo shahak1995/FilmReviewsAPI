@@ -21,9 +21,9 @@ describe 'Latest film reviews' do
       expect(@review.retrieve_copyright).to be_kind_of(String)
     end
 
-    # it 'should return a boolean from has_more' do
-    #   expect(@review.retrieve_has_more).to be equal 'false,'
-    # end
+    it 'should return a boolean from has_more' do
+      expect(@review.retrieve_has_more).to eq(true) | eq(false)
+    end
 
     it 'should return a integer from num_results' do
       expect(@review.retrieve_num_results).to be_kind_of(Integer)
@@ -66,6 +66,54 @@ describe 'Latest film reviews' do
     it 'should return all of the short summaries from summary_short to be String' do
       @review.retrieve_summary_short.each do |short|
         expect(short).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the publication dates from publication_date to be String' do
+      @review.retrieve_publication_date.each do |pubdate|
+        expect(pubdate).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the opening dates from opening_date to be String' do
+      @review.retrieve_opening_date.each do |opening|
+        expect(opening).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the updated dates from date_updated to be String' do
+      @review.retrieve_date_updated.each do |dateupdated|
+        expect(dateupdated).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the links from link to be Hash' do
+      @review.retrieve_link.each do |l|
+        expect(l).to be_kind_of(Hash)
+      end
+    end
+
+    it 'should return all of the types from the link hash to be String' do
+      @review.retrieve_link_type.each do |type|
+        expect(type).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the url from the link hash to be String' do
+      @review.retrieve_link_url.each do |url|
+        expect(url).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the suggested link text from the link hash to be String' do
+      @review.retrieve_link_suggested_link_text.each do |text|
+        expect(text).to be_kind_of(String)
+      end
+    end
+
+    it 'should return all of the multimedia to be hash' do
+      @review.retrieve_multimedia.each do |media|
+        expect(media).to be(nil)
       end
     end
   end
