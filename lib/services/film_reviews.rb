@@ -19,6 +19,6 @@ class FilmReviews
   end 
 end 
 
-test = FilmReviews.new
-test.retrieve_film_reviews('Goodfellas')
-p test.print_all_film_reviews
+# test = FilmReviews.new
+# test.retrieve_film_reviews('Goodfellas')
+# p test.print_all_film_reviews
