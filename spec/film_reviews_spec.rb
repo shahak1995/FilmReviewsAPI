@@ -9,6 +9,7 @@ describe 'Latest film reviews' do
       @review.retrieve_film_reviews('avengers')
     end
 
+    #Test methods
     it 'should return a hash when getting the API data' do
       expect(@review.retrieve_film_results).to be_kind_of(Hash)
     end

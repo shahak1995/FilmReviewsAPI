@@ -5,10 +5,13 @@ Dotenv.load('.env')
 
 class FilmReviews
 
+# Includes all of the classes from HTTParty to use within this class
   include HTTParty
 
+  # The base uri for the API we will be using
   base_uri 'https://api.nytimes.com'
   
+# Method to retrieve film reviews from the API and parse it through JSON using film name
   def retrieve_film_reviews(film_name)
     api_key = ENV['REVIEW_API_KEY']
     @latest_film_data = JSON.parse(self.class.get("/svc/movies/v2/reviews/search.json?query=#{film_name}&api-key=#{api_key}").body)
