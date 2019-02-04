@@ -111,7 +111,7 @@ describe 'Latest film reviews' do
       end
     end
 
-    it 'should return all of the multimedia to be hash' do
+    it 'should return all of the multimedia to be null' do
       @review.retrieve_multimedia.each do |media|
         expect(media).to be(nil)
       end
