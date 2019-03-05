@@ -11,9 +11,9 @@ This application helps to call the Film Reviews API from the new york times webs
 * JSON
 
 ### How to download
-1. Go onto the github website
-2. Search for the repo shahak1995/FilmReviewsAPI
-3. Click on the green button on the right to clone or download the repo
+1. Git clone 'https://github.com/shahak1995/FilmReviewsAPI'
+2. Run 'bundle' in the terminal to install the gems
+3. Run 'rspec'
 
 ### How to use
 1. Open the folder through a code editor of your choice
