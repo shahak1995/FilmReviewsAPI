@@ -1,6 +1,6 @@
 # FilmReviewsAPI
 ### Description
-This application helps to call the Film Reviews API from the new york times website using the Gem HTTParty which gets the data from the website and retrieves it by turning parsing it into a JSON file. Once this is retrieved, the test are done to check each of the elements within the hashes and arrays of the data to see if it is the right data type. Once all the test is done, through the use of RSpec, the test are run to see if they pass or not through the use of Red and Green; Red being a failure and Green being it has passed.
+This Service Object Model helps to call the Film Reviews API service from the new york times website using the Gem HTTParty which gets the data from the API and retrieves it by turning parsing it into a JSON file. Once this is retrieved,the test are done to check each of the elements within the hashes and arrays of the data to see if it is the right data type. Once all the test is done, through the use of RSpec, the test are run to see if they will either pass or fail. 
 
 ### Languages used
 * Ruby

@@ -18,7 +18,7 @@ describe 'Latest film reviews' do
       expect(@review.retrieve_status).to be_kind_of(String)
     end
 
-    it 'should return a string from copyright' do
+    it 'should return a string for copyright' do
       expect(@review.retrieve_copyright).to be_kind_of(String)
     end
 
